@@ -1,0 +1,13 @@
+image: python:latest
+pages:
+  stage: deploy
+  only:
+    - master
+  script:
+    - pip install --upgrade pip
+    - pip install mkdocs-material
+    - pip install mkdocs-macros-plugin
+    - mkdocs build --site-dir public
+  artifacts:
+    paths:
+      - public

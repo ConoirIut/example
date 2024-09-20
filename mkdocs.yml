@@ -1,0 +1,169 @@
+site_name: Première NSI - LGT. Coubertin
+site_author: Lionnel Conoir
+site_url: https://nsi_coubertin.gitlab.io/1_nsi_courses
+repo_name: "Gitlab : nsi_coubertin"
+repo_url: https://gitlab.com/nsi_coubertin/1_nsi_courses
+copyright: |
+  2021 - Lionnel Conoir
+
+docs_dir: docs
+
+
+nav:
+
+  - NSI Première: index.md
+
+  - Cours: 
+      - Initiation: 
+          - Présentation: cours/initiation/presentation.md
+          - Variables: cours/initiation/variables.md
+          - Conditions: cours/initiation/conditions.md
+          - Boucles: cours/initiation/boucles.md
+          - Opérateurs: cours/initiation/operateurs.md
+          - Fonctions: cours/initiation/fonctions.md
+          - Chaînes de caractères : cours/initiation/chaines.md
+
+      - Types construits:
+          - "Listes Python": cours/types/tableaux.md
+          - Tuples: cours/types/tuples.md
+          - Dictionnaires: cours/types/dicos.md
+
+      - Encodage:
+          - Nombres entiers: cours/encodage/nb_entiers.md
+          - Nombres relatifs: cours/encodage/nb_relatifs.md
+          - Nombres réels: cours/encodage/nb_reels.md
+          - Encodage des caractères: cours/encodage/caracteres.md
+
+  - Travaux dririgés:
+      - TD 1 Conditions - Boucles: TD/TD 1/index.md
+      - TD 2 Expression booléennes: TD/TD 2/index.md
+      - TD 3 Chaînes de caractères: TD/TD 3/index.md
+      - TD 4 Découverte des "listes Python": TD/TD 4/index.md
+      - TD 5 Tableaux de tableaux: TD/TD 5/index.md
+      - TD 6 Tuples "Python": TD/TD 6/index.md
+      - TD 7 Dictionnaires "Python": TD/TD 7/index.md
+      - TD 8 Données structurées: TD/TD 8/index.md
+      - TD 9 Encodage des entiers: TD/TD 9/index.md
+
+  - Travaux pratiques:
+      - TP 1 Opérations de base: TP/TP 1/index.md
+      - TP 2 Traitements d'image: TP/TP 2/index.md
+      - TP 3 Traitements d'image 2: TP/TP 3/index.md
+      - TP 4 Anagrammes: TP/TP 4/index.md
+      - TP 5 Conjugaison: TP/TP 5/index.md
+      - TP 6 Codage en génétique: TP/TP 6/index.md
+      - TP 7 Algorithmes gloutons: TP/TP 7/index.md
+      - TP 8 Cryptographie: TP/TP 8/index.md
+      - TP 9 Commandes shell: TP/TP 9/index.md
+
+  - Projets:
+      - Fiches projet: projets/index.md
+      - Projet Jeu du pendu: projets/Projet_1_Jeu_du_pendu/index.md
+      - Travail préparatoire: projets/Projet_2_Jeu_de_la_vie/preparation.md
+      - Projet Jeu de la vie: projets/Projet_2_Jeu_de_la_vie/index.md
+      - Projet final: projets/Projet_final/index.md
+
+  - Logiciels:
+      - Thonny: logiciels/thonny.md
+      - Pydroid 3: logiciels/pydroid.md
+
+
+theme:
+
+  name: material
+  font: false
+  language: fr
+  favicon: images/logo_coubertin.png
+  logo: images/logo_coubertin.png
+  
+  features:
+    - navigation.sections
+    - navigation.instant
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - header.autohide
+
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Mode sombre
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Mode clair
+
+markdown_extensions:
+  - meta
+  - abbr
+  - admonition
+  - def_list
+  - attr_list
+  - footnotes
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.progressbar
+  - pymdownx.highlight:
+      linenums: false
+  - pymdownx.tasklist:
+      custom_checkbox: false
+      clickable_checkbox: true
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: ⚓︎
+      separator: "_"
+      toc_depth: 3
+
+
+plugins:
+  - search
+  - macros
+
+
+extra:
+  social:
+    - icon: fontawesome/solid/chalkboard-user
+      link: http://lycee-coubertin.net
+      name: Etablissement
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:conoir_nsi<AT>sfr.fr
+      name: Écrire à l'auteur
+
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mermaid@8.9.2/dist/mermaid.min.js
+  - javascripts/mermaid.js
+
+
+extra_css:
+  - stylesheets/extra.css
+
+
+
