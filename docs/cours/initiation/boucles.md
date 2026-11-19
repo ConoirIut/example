@@ -12,9 +12,7 @@ ___
 La boucle `while` est parfois appelée une boucle conditionnelle.
 
 !!! note "Structure"
-    ```python
-    while condition :
-        séquence d'instructions
+    ```python 
     ```
 
 ### Algorithme
@@ -44,7 +42,7 @@ Plusieurs utilisations sont possibles.
 Répétition de la séquence d'instructions $n$ fois.
 
 !!! warning inline end "On compte à partir de $0$"
-    de $0$ à $n - 1$, il y a bien $n$ nombres
+    de 0 à $n - 1$, il y a bien $n$ nombres
 La variable $i$ prend successivement les entiers compris dans l'intervalle $[0 ; n[$  
 A chaque tour de boucle, la variable $i$ change de valeur :
 
